@@ -1,5 +1,6 @@
 #pip3 install torch
 #pip3 install --upgrade diffusers transformers accelerate peft
+#pip3 install fastapi uvicorn pydantic
 
 
 import torch
