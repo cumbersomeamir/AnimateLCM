@@ -21,7 +21,7 @@ class AnimationRequest(BaseModel):
     num_inference_steps: int = 6
     seed: int = 0
 
-@app.post("/generate_animation")
+@app.post("/animatelcm")
 async def generate_animation(request: AnimationRequest):
     try:
         output = pipe(
@@ -49,4 +49,4 @@ async def generate_animation(request: AnimationRequest):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=7772)
